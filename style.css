@@ -1,0 +1,16 @@
+header {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+    /*border: 2px red solid;*/
+    background-image: linear-gradient(to right, #ABBFFF, #FBCDF2, #FCF4C9, #FEE3E2, #BBF3C0, #ABBFFF, #FBCDF2);
+    padding-bottom: 80px; 
+    padding-top: 50px;
+    width: 100%; 
+    border: 0;
+}
+
