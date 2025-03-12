@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+}
+
+/*Header - Same style across pages (Changes for responsive design below)*/
 header {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
@@ -14,11 +19,13 @@ header {
 }
 
 
+/*Navigation Bar*/
 .topnav {
     overflow: hidden;
     background-color: #E8BEFA;
   }
   
+  /*Navbar style*/
   .topnav a {
     float: left;
     color: black;
@@ -26,22 +33,44 @@ header {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    font-family: "Permanent Marker"
+    font-family: "Permanent Marker", cursive;
     /*margin-top: 25px;*/
   }
   
+  /*Hover over navbar - changes colour*/
   .topnav a:hover {
     background-color: #FEE3E2;
     color: black;
   }
   
+  /*Current page of navbar - highlighted colour*/
   .topnav a.active {
     background-color: #ABBFFF;
     color: black;
   }
 
+  /*Contact button on navbar - highlighted colour*/
   .topnav a.split {
     float: right;
     background-color: #BBF3C0;
     color: black;
   }
+
+
+  footer {
+    color: black;
+    background-color: #FEE3E2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family: "Permanent Marker", cursive;
+    border: 2px solid red;
+  }
+
+  footer.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
