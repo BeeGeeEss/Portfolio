@@ -1,0 +1,97 @@
+/*Ensures no white gaps along sides of webpage*/
+body {
+    margin: 0;
+  }
+  
+  /*Header - Same style across pages (Changes for responsive design below)*/
+  header {
+      font-family: "Permanent Marker", cursive;
+      font-weight: 400;
+      font-style: normal;
+      display: flex;
+      flex-direction:column-reverse;
+      justify-content: center;
+      align-items: center;
+      /*border: 2px red solid;*/
+      background-image: linear-gradient(to right, #ABBFFF, #FBCDF2, #FCF4C9, #FEE3E2, #BBF3C0, #ABBFFF, #FBCDF2);
+      padding-bottom: 80px; 
+      padding-top: 50px;
+      width: 100%; 
+  }
+  
+  h5 {
+    font-family: "Permanent Marker", cursive;
+  }
+  
+  h6 {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  p {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /*Colour for links*/
+  a {
+    color: black;
+    font-style: bold;
+  }
+  
+  /*Navigation Bar*/
+  .topnav {
+      overflow: hidden;
+      background-color: #E8BEFA;
+    }
+    
+    /*Navbar style*/
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "Permanent Marker", cursive;
+      /*margin-top: 25px;*/
+    }
+    
+    /*Hover over navbar - changes colour*/
+    .topnav a:hover {
+      background-color: #FEE3E2;
+      color: black;
+    }
+    
+    /*Current page of navbar - highlighted colour*/
+    .topnav a.active {
+      background-color: #ABBFFF;
+      color: black;
+    }
+  
+    /*Contact button on navbar - highlighted colour*/
+    .topnav a.split {
+      float: right;
+      background-color: #BBF3C0;
+      color: black;
+    }
+  
+  /*Footer styling*/
+    footer {
+      color: black;
+      background-color: #FEE3E2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+    /*Footer links - centered and on seperate lines*/
+    footer.a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  
