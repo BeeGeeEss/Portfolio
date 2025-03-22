@@ -78,6 +78,21 @@ a {
     color: black;
   }
 
+  @media screen and (max-width: 900px) {  
+    .topnav a.split {
+      float: left;
+      background-color: #E8BEFA;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+      display: block;
+    }
+  }
+
 /*Footer styling*/
   footer {
     color: black;
