@@ -19,6 +19,16 @@
       width: 100%; 
   }
 
+  header img:last-child {
+    display: none;  
+  }
+  header:hover img:last-child {
+    display: block;  
+  }
+  header:hover img:first-child {
+    display: none;  
+  }
+
   /* Title of the page*/
   title {
     color: black;
