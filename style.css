@@ -5,28 +5,44 @@ body {
 
 /*Header - Same style across pages (Changes for responsive design below)*/
 header {
-    font-family: "Permanent Marker", cursive;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    flex-direction:column-reverse;
-    justify-content: center;
-    align-items: center;
-    /*border: 2px red solid;*/
-    background-image: linear-gradient(to right, #ABBFFF, #FBCDF2, #FCF4C9, #FEE3E2, #BBF3C0, #ABBFFF, #FBCDF2);
-    padding-bottom: 80px; 
-    padding-top: 50px;
-    width: 100%; 
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction:column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #ABBFFF, #FBCDF2, #FCF4C9, #FEE3E2, #BBF3C0, #ABBFFF, #FBCDF2);
+  padding-bottom: 80px; 
+  padding-top: 50px;
+  width: 100%; 
 }
 
+/*Creates blinking logo when you hover over the header*/
 header img:last-child {
   display: none;  
 }
+
 header:hover img:last-child {
   display: block;  
 }
+
 header:hover img:first-child {
   display: none;  
+}
+
+/* Title of the page*/
+title {
+  color: black;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 h5 {
@@ -41,7 +57,7 @@ h6 {
 
 p {
   font-family: "Public Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -53,69 +69,129 @@ a {
 
 /*Navigation Bar*/
 .topnav {
-    overflow: hidden;
+  overflow: hidden;
+  background-color: #E8BEFA;
+}
+  
+/*Navbar style*/
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Permanent Marker", cursive;
+}
+  
+/*Hover over navbar - changes colour*/
+.topnav a:hover {
+  background-color: #FEE3E2;
+  color: black;
+}
+  
+/*Current page of navbar - highlighted colour*/
+.topnav a.active {
+  background-color: #ABBFFF;
+  color: black;
+}
+
+/*'Contact' button on navbar - highlighted colour*/
+.topnav a.split {
+  float: right;
+  background-color: #BBF3C0;
+  color: black;
+}
+
+/*Media Repsonsive changes to navbar - no split navbar on medium sized screens*/
+@media screen and (max-width: 900px) {  
+  .topnav a.split {
+    float: left;
     background-color: #E8BEFA;
   }
-  
-  /*Navbar style*/
+}
+
+/*Media Repsonsive changes to navbar - vertical navbar on smaller screen*/
+@media screen and (max-width: 800px) {
   .topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: "Permanent Marker", cursive;
-    /*margin-top: 25px;*/
+    float: none;
+    width: 100%;
+    display: block;
   }
-  
-  /*Hover over navbar - changes colour*/
-  .topnav a:hover {
-    background-color: #FEE3E2;
-    color: black;
-  }
-  
-  /*Current page of navbar - highlighted colour*/
-  .topnav a.active {
-    background-color: #ABBFFF;
-    color: black;
-  }
+}
 
-  /*Contact button on navbar - highlighted colour*/
-  .topnav a.split {
-    float: right;
-    background-color: #BBF3C0;
-    color: black;
-  }
+/*Container for sections on main page*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 
-  @media screen and (max-width: 900px) {  
-    .topnav a.split {
-      float: left;
-      background-color: #E8BEFA;
-    }
-  }
+/*Section 1 - text in 'about us' section*/
+.section1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 180px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding: 50px;
+  background-color: #FCF4C9;
+  border-radius: 50px;
+  border: 4px solid #BBF3C0;
+}
 
-  @media screen and (max-width: 800px) {
-    .topnav a {
-      float: none;
-      width: 100%;
-      display: block;
-    }
+/*Section 1 - image in 'about us' section*/
+.section2 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 0px;
+}
+
+/*Media responsive changes to sections - enables column style and block elements on smaller devices*/
+@media screen and (max-width: 900px) {
+  .flex-container {
+    flex-direction: column;
   }
+}
+  /*.section1 {
+    width: 100%;
+  }
+  .section2 {
+   width: 100%
+  }
+  .img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}*/
+
+@media screen and (max-width: 350px) {
+  .img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
 
 /*Footer styling*/
-  footer {
-    color: black;
-    background-color: #FEE3E2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+footer {
+  color: black;
+  background-color: #FEE3E2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  /*Footer links - centered and on seperate lines*/
-  footer.a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/*Footer links - centered and on seperate lines*/
+footer.a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
