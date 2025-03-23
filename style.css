@@ -129,11 +129,10 @@ a {
 
 /*Section 1 - text in 'about us' section*/
 .section1 {
-  flex: 1;
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center;*/
   margin-left: 180px;
   margin-bottom: 40px;
   margin-top: 40px;
@@ -145,19 +144,24 @@ a {
 
 /*Section 1 - image in 'about us' section*/
 .section2 {
-  flex: 1;
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center;*/
   padding-right: 100px;
   padding-left: 0px;
 }
 
-/*Media responsive changes to sections - enables column style and block elements on smaller devices*/
+/*Media responsive changes to sections - enables column style on smaller devices*/
 @media screen and (max-width: 900px) {
   .flex-container {
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
   /*.section1 {

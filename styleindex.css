@@ -1,0 +1,172 @@
+/*Ensures no white gaps along sides of webpage*/
+body {
+    margin: 0;
+  }
+  
+  /*Header - Same style across pages (Changes for responsive design below)*/
+  header {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #ABBFFF, #FBCDF2, #FCF4C9, #FEE3E2, #BBF3C0, #ABBFFF, #FBCDF2);
+    padding-bottom: 80px; 
+    padding-top: 50px;
+    width: 100%; 
+  }
+
+  /*Creates blinking logo when you hover over the header*/
+header img:last-child {
+    display: none;  
+  }
+  
+  header:hover img:last-child {
+    display: block;  
+  }
+  
+  header:hover img:first-child {
+    display: none;  
+  }
+
+  /* Title of the page*/
+title {
+    color: black;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  h5 {
+    font-family: "Permanent Marker", cursive;
+  }
+  
+  h6 {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  p {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /*Colour for links*/
+a {
+    color: black;
+    font-style: bold;
+  }
+
+  /*Navigation Bar for smaller devices*/
+.topnav {
+    overflow: hidden;
+    background-color: #E8BEFA;
+  }
+
+  /*Navigation Bar for smaller devices*/
+  .topnav a {
+    float: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Permanent Marker", cursive;
+  }
+
+  /*Hover over navbar - changes colour*/
+.topnav a:hover {
+    background-color: #FEE3E2;
+    color: black;
+  }
+
+  /*Hover over split - changes to same colour as above*/
+  .topnav a.split:hover {
+    background-color: #FEE3E2;
+    color: black;
+  }
+    
+  /*Current page of navbar - highlighted colour*/
+  .topnav a.active {
+    background-color: #ABBFFF;
+    color: black;
+  }
+
+  /*Navbar split isn't shown on smaller devices*/
+  .topnav a.split {
+    float: none;
+    background-color: #E8BEFA;
+  }
+
+/*Navbar styling for devices over 600px*/
+  @media screen and (min-width: 600px) {  
+    .topnav {
+        display: flex;
+        overflow: hidden;
+        background-color: #E8BEFA;
+      }
+    .topnav a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: "Permanent Marker", cursive;
+      }
+    .topnav a.split {
+      float: left;
+      background-color: #E8BEFA;
+    }
+  }
+
+  /*Navbar styling for devices over 800px*/
+  @media screen and (min-width: 800px) { 
+    .topnav {
+        overflow: hidden;
+        background-color: #E8BEFA;
+      }
+    .topnav a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: "Permanent Marker", cursive;
+      }
+    /*Contacts tab will split and be displayed on the right hand side of page, highlighted green*/
+    .topnav a.split {
+        float: right;
+        background-color: #BBF3C0;
+        color: black;
+      }
+  }
+
+
+  /*Footer styling*/
+footer {
+    color: black;
+    background-color: #FEE3E2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /*Footer links - centered and on seperate lines*/
+  footer.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

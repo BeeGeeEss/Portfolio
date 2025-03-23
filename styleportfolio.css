@@ -99,7 +99,7 @@ body {
       .topnav a {
         float: none;
         width: 100%;
-        display: block;
+        /*display: block;*/
       }
     }
   
