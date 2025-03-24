@@ -92,261 +92,260 @@
   }
   
 /*Navbar styling for smaller devices - 0px-600px*/  
-@media only screen and (min-width: 0px) and (max-width: 600px) {
-  .topnav {
-    overflow: hidden;
-    background-color: #E8BEFA;
+  @media only screen and (min-width: 0px) and (max-width: 600px) {
+    .topnav {
+      overflow: hidden;
+      background-color: #E8BEFA;
+    }
+    .topnav a {
+      float: none;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "Permanent Marker", cursive;
+    }
+    .topnav a:hover {
+      background-color: #FEE3E2;
+      color: black;
+    }
+    .topnav a.active {
+      background-color: #ABBFFF;
+      color: black;
+    }
   }
-  .topnav a {
-    float: none;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: "Permanent Marker", cursive;
-  }
-  .topnav a:hover {
-    background-color: #FEE3E2;
-    color: black;
-  }
-  .topnav a.active {
-    background-color: #ABBFFF;
-    color: black;
-  }
-}
 
 /*Navbar styling for medium sized devices over 600px-800px*/
-@media screen and (min-width: 600px) and (max-width: 800px) {  
-  .topnav {
-    display: flex;
-    overflow: hidden;
-    background-color: #E8BEFA;
-  }
-  
-  .topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: "Permanent Marker", cursive;
-  }
+  @media screen and (min-width: 600px) and (max-width: 800px) {  
+    .topnav {
+      display: flex;
+      overflow: hidden;
+      background-color: #E8BEFA;
+    }
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "Permanent Marker", cursive;
+    }
   /*Navbar tab will highlight orange when hovered over*/
-  .topnav a:hover {
-    background-color: #FEE3E2;
-    color: black;
-  }
+    .topnav a:hover {
+      background-color: #FEE3E2;
+      color: black;
+    }
   /*Navbar tab for current page will highlight purple so that user know what page they're on*/
-  .topnav a.active {
-    background-color: rgb(171, 191, 255);
-    color: black;
+    .topnav a.active {
+      background-color: rgb(171, 191, 255);
+      color: black;
+    }
   }
-}
 
 /*Navbar styling for larger sized devices over 800px*/
-@media only screen and (min-width: 800px) { 
-  .topnav {
-    overflow: hidden;
-    background-color: #E8BEFA;
-  }
-  .topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: "Permanent Marker", cursive;
-  }
+  @media only screen and (min-width: 800px) { 
+    .topnav {
+      overflow: hidden;
+      background-color: #E8BEFA;
+    }
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "Permanent Marker", cursive;
+    }
   /*Contacts tab will split and be displayed on the right hand side of page, highlighted green*/
-  .topnav a.split {
-    float: right;
-    background-color: #BBF3C0;
-    color: black;
+    .topnav a.split {
+      float: right;
+      background-color: #BBF3C0;
+      color: black;
+    }
+    .topnav a:hover {
+      background-color: #FEE3E2;
+      color: black;
+    }
+    .topnav a.split:hover {
+      background-color: #FEE3E2;
+      color: black;
+    }
+    .topnav a.active {
+      background-color: #ABBFFF;
+      color: black;
+    }
   }
-  .topnav a:hover {
-    background-color: #FEE3E2;
-    color: black;
-  }
-  .topnav a.split:hover {
-    background-color: #FEE3E2;
-    color: black;
-  }
-  .topnav a.active {
-    background-color: #ABBFFF;
-    color: black;
-  }
-}
 
 /*Ensuring box-sizing throughout page includes margin/border*/
-* {
+  * {
     box-sizing: border-box;
-}
+  }
 
 /*Responsive design for extra small devices*/
-@media screen and (min-width: 0px) and (max-width: 400px) {
-.contact-container {
-  height: auto;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  padding-bottom: 80px;
-} 
+  @media screen and (min-width: 0px) and (max-width: 400px) {
+    .contact-container {
+      height: auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      padding-bottom: 80px;
+  } 
 /*Purple box on the right of the contact form page*/
-.contact-right {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 25px;
-  background-color: #E8BEFA;
-  padding: 20px;
-  border-radius: 50px;
-  border: 4px solid #abbfff;
-}
-.contact-right:hover {
-  box-shadow: 0 0 30px rgba(171, 191, 255, 0.9);
-} 
+    .contact-right {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 25px;
+      background-color: #E8BEFA;
+      padding: 20px;
+      border-radius: 50px;
+     border: 4px solid #abbfff;
+  }
+    .contact-right:hover {
+      box-shadow: 0 0 30px rgba(171, 191, 255, 0.9);
+  } 
 /*Contact form - Title*/
-.contact-right-title h2 {
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;  
-  margin-bottom: 5px;
-  color: black;
-}
+    .contact-right-title h2 {
+      font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;  
+      margin-bottom: 5px;
+      color: black;
+  }
 /*Purple underline on contact*/
-.contact-right-title hr {
-  border: none;
-  width: 160px;
-  height: 8px;
-  background-color: #ABBFFF;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
+    .contact-right-title hr {
+      border: none;
+      width: 160px;
+      height: 8px;
+      background-color: #ABBFFF;
+      border-radius: 10px;
+      margin-bottom: 20px;
+  }
 /*Text area field for - 'Your Message'*/
-.contact-right-textarea {
-  height: 140px;
-  padding-top: 15px;
-  border-radius: 20px;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-} 
+    .contact-right-textarea {
+      height: 140px;
+      padding-top: 15px;
+      border-radius: 20px;
+     font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+  } 
 /*Submit button*/
-.contact-right button {
-  display: flex;
-  align-items: center;
-  padding: 15px 30px;
-  font-size: 14px;
-  color: black;
-  gap: 10px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: #ABBFFF;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-} 
+    .contact-right button {
+      display: flex;
+      align-items: center;
+      padding: 15px 30px;
+      font-size: 14px;
+      color: black;
+      gap: 10px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      background-color: #ABBFFF;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+  } 
 /*Submit button arrow*/
-.contact-right button img {
-  width: 500px;
-}
-.contact-inputs {
-  width: 80vw;
-}
-.contact-left {
-  display: none;
-}
+    .contact-right button img {
+      width: 500px;
+  }
+    .contact-inputs {
+      width: 80vw;
+  }
+    .contact-left {
+      display: none;
+  }
 }
 
 /*Responsive design for small to medium sized devices*/
-@media screen and (min-width: 400px) and (max-width: 800px) {
+  @media screen and (min-width: 400px) and (max-width: 800px) {
 /*Contact form*/
-.contact-container {
-  height: auto;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  padding-bottom: 80px;
-}
+    .contact-container {
+      height: auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      padding-bottom: 80px;
+  }
 /*Purple box on the right of the contact form page*/
-.contact-right {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 25px;
-  background-color: #E8BEFA;
-  padding: 150px;
-  border-radius: 50px;
-  border: 4px solid #abbfff;
-}
-.contact-right:hover {
-  box-shadow: 0 0 30px rgba(171, 191, 255, 0.9);
-} 
+    .contact-right {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 25px;
+      background-color: #E8BEFA;
+      padding: 150px;
+      border-radius: 50px;
+      border: 4px solid #abbfff;
+  }
+    .contact-right:hover {
+      box-shadow: 0 0 30px rgba(171, 191, 255, 0.9);
+  } 
 /*Contact form - Title*/
-.contact-right-title h2 {
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;  
-  margin-bottom: 5px;
-  color: black;
-}
+  .contact-right-title h2 {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;  
+    margin-bottom: 5px;
+    color: black;
+  }
 /*Purple underline on contact*/
-.contact-right-title hr {
-  border: none;
-  width: 160px;
-  height: 8px;
-  background-color: #ABBFFF;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
+  .contact-right-title hr {
+    border: none;
+    width: 160px;
+    height: 8px;
+    background-color: #ABBFFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
 /*Text area field for - 'Your Message'*/
-.contact-right-textarea {
-  height: 140px;
-  padding-top: 15px;
-  border-radius: 20px;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+  .contact-right-textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 /*Submit button*/
- .contact-right button {
-  display: flex;
-  align-items: center;
-  padding: 15px 30px;
-  font-size: 14px;
-  color: black;
-  gap: 10px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: #ABBFFF;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-} 
+   .contact-right button {
+      display: flex;
+      align-items: center;
+      padding: 15px 30px;
+      font-size: 14px;
+      color: black;
+      gap: 10px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      background-color: #ABBFFF;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+  } 
 /*Submit button arrow*/
-.contact-right button img {
-  width: 500px;
-}
-.contact-inputs {
-  width: 80vw;
-}
-.contact-left {
-  display: none;
-}
+  .contact-right button img {
+     width: 500px;
+  }
+  .contact-inputs {
+     width: 80vw;
+  }
+  .contact-left {
+     display: none;
+  }
 }
 
 /*Responsive design for larger sized devices*/
@@ -432,20 +431,20 @@
 
 
 /*Footer styling*/
-footer {
-  color: black;
-  background-color: #fee3e2;
-  text-align: center;
-  text-decoration: none;
-  position: absolute;
-  width: 100%;
-  padding-top: 50px;
-}
+  footer {
+    color: black;
+    background-color: #fee3e2;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    padding-top: 50px;
+  }
   
 /*Footer links - centered and on seperate lines*/
-footer.a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  footer.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
