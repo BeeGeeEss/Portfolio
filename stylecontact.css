@@ -117,7 +117,6 @@ textarea {
   }
 }
 
-
 /*Navbar styling for medium sized devices over 600px-800px*/
 @media screen and (min-width: 600px) and (max-width: 800px) {  
   .topnav {
@@ -142,11 +141,10 @@ textarea {
   }
   /*Navbar tab for current page will highlight purple so that user know what page they're on*/
   .topnav a.active {
-    background-color: #ABBFFF;
+    background-color: rgb(171, 191, 255);
     color: black;
   }
 }
-
 
 /*Navbar styling for larger sized devices over 800px*/
 @media only screen and (min-width: 800px) { 
@@ -185,10 +183,11 @@ textarea {
 
 /*Ensuring box-sizing throughout page includes margin/border*/
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-  
-/*Contact form*/
+
+/*Responsive design for extra small devices*/
+@media screen and (min-width: 0px) and (max-width: 400px) {
 .contact-container {
   height: auto;
   width: 100%;
@@ -199,8 +198,7 @@ textarea {
   font-weight: 700;
   font-style: normal;
   padding-bottom: 80px;
-}
-  
+} 
 /*Purple box on the right of the contact form page*/
 .contact-right {
   display: flex;
@@ -208,11 +206,13 @@ textarea {
   align-items: start;
   gap: 25px;
   background-color: #E8BEFA;
-  padding: 150px;
+  padding: 20px;
   border-radius: 50px;
-  border: 4px solid #ABBFFF;
+  border: 4px solid #abbfff;
 }
- 
+.contact-right:hover {
+  box-shadow: 0 0 30px rgba(171, 191, 255, 0.9);
+} 
 /*Contact form - Title*/
 .contact-right-title h2 {
   font-family: "Public Sans", sans-serif;
@@ -221,7 +221,6 @@ textarea {
   margin-bottom: 5px;
   color: black;
 }
-  
 /*Purple underline on contact*/
 .contact-right-title hr {
   border: none;
@@ -231,7 +230,6 @@ textarea {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-
 /*Text area field for - 'Your Message'*/
 .contact-right-textarea {
   height: 140px;
@@ -240,8 +238,7 @@ textarea {
   font-family: "Public Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
-}
-  
+} 
 /*Submit button*/
 .contact-right button {
   display: flex;
@@ -257,38 +254,181 @@ textarea {
   font-family: "Public Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
-}
-  
+} 
 /*Submit button arrow*/
 .contact-right button img {
   width: 500px;
 }
-  
-/*Contact page image*/
-.contact-left img {
-  width: 500px;
+.contact-inputs {
+  width: 80vw;
 }
-  
-/*Ensure size of input fields on smaller devices*/
-@media screen and (max-width:800px) {
-  .contact-inputs {
-    width: 80vw;
-  }
+.contact-left {
+  display: none;
+}
 }
 
-/*ensure element fits onto smaller devices, without spilling over the page*/
-@media screen and (max-width:900px) {
-  .contact-container {
-    display: block;
-  }
+/*Responsive design for small to medium sized devices*/
+@media screen and (min-width: 400px) and (max-width: 800px) {
+/*Contact form*/
+.contact-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-bottom: 80px;
 }
-  
-/*Remove image and focus on contact form on smaller devices*/
-@media screen and (max-width:800px) {
-  .contact-left {
-    display: none;
-  }
-}    
+/*Purple box on the right of the contact form page*/
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 25px;
+  background-color: #E8BEFA;
+  padding: 150px;
+  border-radius: 50px;
+  border: 4px solid #abbfff;
+}
+.contact-right:hover {
+  box-shadow: 0 0 30px rgba(171, 191, 255, 0.9);
+} 
+/*Contact form - Title*/
+.contact-right-title h2 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;  
+  margin-bottom: 5px;
+  color: black;
+}
+/*Purple underline on contact*/
+.contact-right-title hr {
+  border: none;
+  width: 160px;
+  height: 8px;
+  background-color: #ABBFFF;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+/*Text area field for - 'Your Message'*/
+.contact-right-textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/*Submit button*/
+ .contact-right button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 14px;
+  color: black;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #ABBFFF;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} 
+/*Submit button arrow*/
+.contact-right button img {
+  width: 500px;
+}
+.contact-inputs {
+  width: 80vw;
+}
+.contact-left {
+  display: none;
+}
+}
+
+/*Responsive design for larger sized devices*/
+@media screen and (min-width:800px) {
+  .contact-container {
+      height: auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      padding-bottom: 80px;
+    } 
+    /*Purple box on the right of the contact form page*/
+    .contact-right {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 25px;
+      background-color: #E8BEFA;
+      padding: 150px;
+      border-radius: 50px;
+      border: 4px solid #abbfff;
+    }
+    .contact-right:hover {
+      box-shadow: 0 0 30px rgba(171, 191, 255, 0.9);
+    } 
+    /*Contact form - Title*/
+    .contact-right-title h2 {
+      font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;  
+      margin-bottom: 5px;
+      color: black;
+    }
+    /*Purple underline on contact*/
+    .contact-right-title hr {
+      border: none;
+      width: 160px;
+      height: 8px;
+      background-color: #ABBFFF;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    /*Text area field for - 'Your Message'*/
+    .contact-right-textarea {
+      height: 140px;
+      padding-top: 15px;
+      border-radius: 20px;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    } 
+    /*Submit button*/
+    .contact-right button {
+      display: flex;
+      align-items: center;
+      padding: 15px 30px;
+      font-size: 14px;
+      color: black;
+      gap: 10px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      background-color: #ABBFFF;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    } 
+    /*Submit button arrow*/
+    .contact-right button img {
+      width: 500px;
+    }
+    /*.contact-container {
+      display: block;
+    }*/
+    .contact-left img {
+      width: 500px;
+    }
+}
 
 
 /*Footer styling*/
