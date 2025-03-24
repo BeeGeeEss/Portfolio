@@ -1,95 +1,95 @@
 /*Ensures no white gaps along sides of webpage*/
-body {
-  margin: 0;
-}
+  body {
+    margin: 0;
+  }
 
 /*Header - Same style across pages (Changes for responsive design below)*/
-header {
- font-family: "Permanent Marker", cursive;
- font-weight: 400;
- font-style: normal;
- display: flex;
- flex-direction:column-reverse;
- justify-content: center;
- align-items: center;
- background-image: linear-gradient(to right, #ABBFFF, #FBCDF2, #FCF4C9, #FEE3E2, #BBF3C0, #ABBFFF, #FBCDF2);
- padding-bottom: 80px; 
- padding-top: 50px;
- width: 100%; 
-}
+  header {
+   font-family: "Permanent Marker", cursive;
+   font-weight: 400;
+   font-style: normal;
+   display: flex;
+   flex-direction:column-reverse;
+   justify-content: center;
+   align-items: center;
+   background-image: linear-gradient(to right, #ABBFFF, #FBCDF2, #FCF4C9, #FEE3E2, #BBF3C0, #ABBFFF, #FBCDF2);
+   padding-bottom: 80px; 
+   padding-top: 50px;
+   width: 100%; 
+  }
 
 /*Creates blinking logo when you hover over the header*/
-header img:last-child {
-  display: none;  
-}
-header:hover img:last-child {
-  display: block;  
-}
-header:hover img:first-child {
-  display: none;  
-}
+  header img:last-child {
+    display: none;  
+  }
+  header:hover img:last-child {
+    display: block;  
+  }
+  header:hover img:first-child {
+    display: none;  
+  }
 
 /* Title of the page*/
-title {
-  color: black;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+  title {
+    color: black;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
 /*Text stylings*/
-h5 {
-  font-family: "Permanent Marker", cursive;
-}
-h6 {
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-p {
-  font-family: "Public Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  h5 {
+    font-family: "Permanent Marker", cursive;
+  }
+  h6 {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  p {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 /*Colour for links*/
-a {
-  color: black;
-  font-style: bold;
-}
+  a {
+    color: black;
+    font-style: bold;
+  }
 
 /*Styling for the input fields on the contact form*/
-input {
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 15px;
-  width: 100%;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 10px;
-  border-radius: 10px;
-  outline: none;
-}
+  input {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+  }
 
 /*Styling for the textarea fields on the contact form*/
-textarea {
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 15px;
-  width: 100%;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 10px;
-  border-radius: 10px;
-}
+  textarea {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
   
 /*Navbar styling for smaller devices - 0px-600px*/  
 @media only screen and (min-width: 0px) and (max-width: 600px) {
