@@ -164,7 +164,7 @@
     border-radius: 50px;
   }
 /*Shadow effect aorund section of text*/
-  .section1:hover {
+  .about1:hover {
     box-shadow: 0 0 30px rgba(187, 243, 192, 0.9);
   }
 
@@ -178,7 +178,7 @@
       align-items: center;
       width: 100%;
     }
-    .section1 {
+    .about1 {
       padding-left: 60px;
       padding-right: 60px;
     }
@@ -196,7 +196,7 @@
       align-items: center;
       width: 100%;
     }
-    .section1 {
+    .about1 {
       display: flex;
       flex: 1;
       justify-content: flex-end;
@@ -208,7 +208,7 @@
       border-radius: 50px;
       border: 4px solid #bbf3c0;
     }
-    .section2 {
+    .about2 {
       display: flex;
       flex: 1;
       justify-content: flex-start;
@@ -233,14 +233,5 @@
     align-items: center;
   }
 
-
-
-
-  .container1 {
-    display: grid;
-    border: 2px red solid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: [row1-start] 25% [row2-start] 50% [row3-start] 25%;
-  }
 
   
