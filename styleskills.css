@@ -12,7 +12,7 @@ header {
  flex-direction:column-reverse;
  justify-content: center;
  align-items: center;
- background-image: linear-gradient(to right, #ABBFFF, #FBCDF2, #FCF4C9, #FEE3E2, #BBF3C0, #ABBFFF, #FBCDF2);
+ background-image: linear-gradient(to right, #abbfff, #FBCDF2, #FCF4C9, #FEE3E2, #bbf3c0, #ABBFFF, #FBCDF2);
  padding-bottom: 80px; 
  padding-top: 50px;
  width: 100%; 
@@ -30,7 +30,7 @@ header:hover img:first-child {
 }
 
 /* Title of the page*/
-title {
+h1 {
   color: black;
   font-family: "Public Sans", sans-serif;
   font-weight: 700;
@@ -44,6 +44,11 @@ title {
 }
 
 /*Text stylings*/
+h2{
+  font-family: "Public Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 h5 {
   font-family: "Permanent Marker", cursive;
 }
@@ -56,12 +61,20 @@ p {
   font-family: "Public Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
+}
+li {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
 }
 
 /*Colour for links*/
 a {
   color: black;
-  font-style: bold;
+  font-style: normal;
+  font-weight: 900;
 }
 
 /*Navbar styling for smaller devices - 0px-600px*/  
@@ -156,36 +169,65 @@ a {
   }
 }
 
+@media screen and (min-width: 0px) and (max-width: 900px) {
 .flex-container {
-  border: 2px red solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 50px;
 }
-
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-  background-color: transparent;
-  width: 450px;
-  height: 200px;
-  /*border: 1px solid #f1f1f1;*/
-  border: 2px blue solid;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  background-color: #BBF3C0;
+  width: 500px;
+  height: 250px;
+  border-radius: 50%;
 }
-
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+  background-color: #BBF3C0;
+  box-shadow: 0 0 30px rgba(171, 191, 255, 0.9);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 }
 
+@media screen and (min-width: 900px) {
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 200px;
+  perspective: 1000px;
+  border-radius: 50%;
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -194,23 +236,29 @@ a {
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  box-sizing: border-box;
+  background-color: #BBF3C0;
+  box-shadow: 0 0 30px rgba(171, 191, 255, 0.9);
   color: black;
   font-family: "Public Sans", sans-serif;
-  font-size: 30px;
-  /*padding-top: 50px;*/
+  font-size: 20px;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px ;
 }
-
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #ABBFFF;
+  box-shadow: 0 0 30px rgba(187, 243, 192, 0.9);
+  color: black;
   transform: rotateY(180deg);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+}
 
 
 /*Footer styling*/

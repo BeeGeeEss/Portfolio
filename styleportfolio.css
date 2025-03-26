@@ -30,7 +30,7 @@ header:hover img:first-child {
 }
 
 /* Title of the page*/
-title {
+h1 {
   color: black;
   font-family: "Public Sans", sans-serif;
   font-weight: 700;
@@ -61,7 +61,8 @@ p {
 /*Colour for links*/
 a {
   color: black;
-  font-style: bold;
+  font-style: normal;
+  font-weight: 900;
 }
 
 /*Navbar styling for smaller devices - 0px-600px*/  

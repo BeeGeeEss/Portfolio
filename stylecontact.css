@@ -30,7 +30,7 @@
   }
 
 /* Title of the page*/
-  title {
+  h1 {
     color: black;
     font-family: "Public Sans", sans-serif;
     font-weight: 700;
@@ -61,7 +61,8 @@
 /*Colour for links*/
   a {
     color: black;
-    font-style: bold;
+    font-style: normal;
+    font-weight: 900;
   }
 
 /*Styling for the input fields on the contact form*/
@@ -161,16 +162,7 @@
       font-family: "Permanent Marker", cursive;
     }
   /*Contacts tab will split and be displayed on the right hand side of page, highlighted green*/
-    .topnav a.split {
-      float: right;
-      background-color: #BBF3C0;
-      color: black;
-    }
     .topnav a:hover {
-      background-color: #FEE3E2;
-      color: black;
-    }
-    .topnav a.split:hover {
       background-color: #FEE3E2;
       color: black;
     }
