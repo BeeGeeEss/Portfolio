@@ -265,8 +265,8 @@
 /*Style the front side*/
     .flip-card-front {
       box-sizing: border-box;
-      background-color: #BBF3C0;
-      box-shadow: 0 0 30px rgba(171, 191, 255, 0.9);
+      background-color: #ABBFFF;
+      box-shadow:  0 0 30px rgba(187, 243, 192, 0.9); 
       color: black;
       font-family: "Public Sans", sans-serif;
       font-size: 20px;
@@ -277,8 +277,8 @@
     }
 /*Style the back side*/
     .flip-card-back {
-      background-color: #ABBFFF;
-      box-shadow: 0 0 30px rgba(187, 243, 192, 0.9);
+      background-color: #BBF3C0;
+      box-shadow: 0 0 30px rgba(171, 191, 255, 0.9);
       color: black;
       transform: rotateY(180deg);
       padding-top: 5px;

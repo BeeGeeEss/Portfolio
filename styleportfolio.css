@@ -1,175 +1,237 @@
 /*Ensures no white gaps along sides of webpage*/
-body {
-  margin: 0;
-}
+  body {
+    margin: 0;
+    text-align:center;
+  }
 
 /*Header - Same style across pages (Changes for responsive design below)*/
-header {
- font-family: "Permanent Marker", cursive;
- font-weight: 400;
- font-style: normal;
- display: flex;
- flex-direction:column-reverse;
- justify-content: center;
- align-items: center;
- background-image: linear-gradient(to right, #ABBFFF, #FBCDF2, #FCF4C9, #FEE3E2, #BBF3C0, #ABBFFF, #FBCDF2);
- padding-bottom: 80px; 
- padding-top: 50px;
- width: 100%; 
-}
+  header {
+   font-family: "Permanent Marker", cursive;
+   font-weight: 400;
+   font-style: normal;
+   display: flex;
+   flex-direction:column-reverse;
+   justify-content: center;
+   align-items: center;
+   background-image: linear-gradient(to right, #abbfff, #FBCDF2, #FCF4C9, #FEE3E2, #bbf3c0, #ABBFFF, #FBCDF2);
+   padding-bottom: 80px; 
+   padding-top: 50px;
+   width: 100%; 
+  }
 
 /*Creates blinking logo when you hover over the header*/
-header img:last-child {
-  display: none;  
-}
-header:hover img:last-child {
-  display: block;  
-}
-header:hover img:first-child {
-  display: none;  
-}
+  header img:last-child {
+    display: none;  
+  }
+  header:hover img:last-child {
+    display: block;  
+  }
+  header:hover img:first-child {
+    display: none;  
+  }
 
 /* Title of the page*/
-h1 {
-  color: black;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+  h1 {
+    color: black;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
 /*Text stylings*/
-h5 {
-  font-family: "Permanent Marker", cursive;
-}
-h6 {
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-p {
-  font-family: "Public Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  h2{
+    font-family: "Public Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  h5 {
+    font-family: "Permanent Marker", cursive;
+  }
+  h6 {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  p {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+  }
 
 /*Colour for links*/
-a {
-  color: black;
-  font-style: normal;
-  font-weight: 900;
-}
+  a {
+    color: black;
+    font-style: normal;
+    font-weight: 900;
+  }
 
 /*Navbar styling for smaller devices - 0px-600px*/  
-@media only screen and (min-width: 0px) and (max-width: 600px) {
-  .topnav {
-    overflow: hidden;
-    background-color: #E8BEFA;
+  @media only screen and (min-width: 0px) and (max-width: 600px) {
+    .topnav {
+      overflow: hidden;
+      background-color: #E8BEFA;
+    }
+    .topnav a {
+      float: none;
+      display: block;
+      color: black;
+      text-align: center;
+     padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "Permanent Marker", cursive;
+    }
+    .topnav a:hover {
+      background-color: #FEE3E2;
+      color: black;
+    }
+    .topnav a.active {
+      background-color: #ABBFFF;
+      color: black;
+    }
   }
-  .topnav a {
-    float: none;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: "Permanent Marker", cursive;
-  }
-  .topnav a:hover {
-    background-color: #FEE3E2;
-    color: black;
-  }
-  .topnav a.active {
-    background-color: #ABBFFF;
-    color: black;
-  }
-}
-
 
 /*Navbar styling for medium sized devices over 600px-800px*/
-@media screen and (min-width: 600px) and (max-width: 800px) {  
-  .topnav {
-    display: flex;
-    overflow: hidden;
-    background-color: #E8BEFA;
+  @media screen and (min-width: 600px) and (max-width: 800px) {  
+    .topnav {
+      display: flex;
+      overflow: hidden;
+      background-color: #E8BEFA;
+    }
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "Permanent Marker", cursive;
+    }
+/*Navbar tab will highlight orange when hovered over*/
+    .topnav a:hover {
+      background-color: #FEE3E2;
+      color: black;
+    }
+/*Navbar tab for current page will highlight purple so that user know what page they're on*/
+    .topnav a.active {
+      background-color: #ABBFFF;
+      color: black;
+    }
   }
-  
-  .topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: "Permanent Marker", cursive;
-  }
-  /*Navbar tab will highlight orange when hovered over*/
-  .topnav a:hover {
-    background-color: #FEE3E2;
-    color: black;
-  }
-  /*Navbar tab for current page will highlight purple so that user know what page they're on*/
-  .topnav a.active {
-    background-color: #ABBFFF;
-    color: black;
-  }
-}
-
 
 /*Navbar styling for larger sized devices over 800px*/
-@media only screen and (min-width: 800px) { 
-  .topnav {
-    overflow: hidden;
-    background-color: #E8BEFA;
+  @media only screen and (min-width: 800px) { 
+    .topnav {
+      overflow: hidden;
+      background-color: #E8BEFA;
+    }
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "Permanent Marker", cursive;
+    }
+/*Contacts tab will split and be displayed on the right hand side of page, highlighted green*/
+    .topnav a.split {
+      float: right;
+      background-color: #BBF3C0;
+      color: black;
+    }
+    .topnav a:hover {
+      background-color: #FEE3E2;
+      color: black;
+    }
+    .topnav a.split:hover {
+      background-color: #FEE3E2;
+      color: black;
+    }
+    .topnav a.active {
+      background-color: #ABBFFF;
+      color: black;
+    }
   }
-  .topnav a {
-    float: left;
+
+/*Clickable animations in main section - responsive across screen sizes*/
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    align-items: center;
     color: black;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Permanent Marker", cursive;
+    bottom: 45%;
+    padding-top:100px; 
+    padding-bottom: 100px; 
+  }
+  .container {
+    align-items: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    width: 100%;
+    bottom: 45%;
+    display: block; 
+}
+  .flip {
+    height: 50px;
+    overflow: hidden;
+  }
+  .flip > div > div {
+    color: black;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+  }
+  .flip div:first-child {
+    animation: show 6s linear infinite;
+  }
+  .flip div div {
+    background: #abbfff;
+  }
+  .flip div:first-child div {
+    background: #FBCDF2;
+  }
+  .flip div:last-child div {
+    background: #bbf3c0;
+  }
+/*Animation timings*/
+  @keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+   71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
+
+/*Footer styling*/
+  footer {
+    color: black;
+    background-color: #FEE3E2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-    font-family: "Permanent Marker", cursive;
   }
-  /*Contacts tab will split and be displayed on the right hand side of page, highlighted green*/
-  .topnav a.split {
-    float: right;
-    background-color: #BBF3C0;
-    color: black;
-  }
-  .topnav a:hover {
-    background-color: #FEE3E2;
-    color: black;
-  }
-  .topnav a.split:hover {
-    background-color: #FEE3E2;
-    color: black;
-  }
-  .topnav a.active {
-    background-color: #ABBFFF;
-    color: black;
-  }
-}
-
-
-/*Footer styling*/
-footer {
-  color: black;
-  background-color: #FEE3E2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 
 /*Footer links - centered and on seperate lines*/
-footer.a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  footer.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
