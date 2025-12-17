@@ -1,7 +1,7 @@
 
 ![Image](./images/BeeGeeEss5.png)
 
-# 🌈 Bee Gee Ess Designs - Professional Portfolio 🌈
+# 🌈 BeeGeeEss Designs - Professional Portfolio 🌈
 
 A vibrant interactive **portfolio website** showcasing creative front-end development skills, built with **HTML, CSS, and JavaScript** and hosted on **Netlify**.
 
